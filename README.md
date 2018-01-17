@@ -61,4 +61,4 @@ Get the descendants of each element in the current set of matched elements, filt
 
 #### ``` .remove() ```
 
-Remove the set of matched elements from the DOM.```
+Remove the set of matched elements from the DOM.
