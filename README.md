@@ -4,7 +4,7 @@ DOMSelecta! is a cross-browser library for traversing and manipulating the DOM, 
 ## Documentation
 
 #### How to install DOMSelecta!
-Installing DOMSelecta! is as simple as including a reference to the DOMSelecta script in a ``` <script> ``` tag inside the ``` <head> ``` section of your HTML file:
+Installing DOMSelecta! is as simple as including a reference to the DOMSelecta script inside a ``` <script> ``` tag, within the ``` <head> ``` section of your HTML file:
 
 ``` HTML
 <head>
