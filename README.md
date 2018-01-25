@@ -41,7 +41,7 @@ Get the value of an attribute for the first element in the set of matched elemen
 
 #### ``` .addClass() ```
 
-Add the specified class/es to each element in the set of matched elements.
+Add the specified class or classes to each element in the set of matched elements.
 
 #### ``` .removeClass() ```
 
