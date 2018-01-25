@@ -1,4 +1,4 @@
-# DOMSelecta!
+# __DOMSelecta!__
 DOMSelecta! is a cross-browser library for traversing and manipulating the DOM, written in JavaScript.
 
 ## Documentation
@@ -18,8 +18,7 @@ Installing DOMSelecta! is as simple as including a reference to the DOMSelecta s
 
 ## API
 
-#### ```Element Selector (“element”)```
-
+#### Element Selector ```$ds(“element”)```
 
 Select all elements with the given tag name.
 
@@ -41,24 +40,44 @@ Get the value of an attribute for the first element in the set of matched elemen
 
 #### ``` .addClass() ```
 
-Add the specified class or classes to each element in the set of matched elements.
+Add the specified class or classes to each matched element.
 
 #### ``` .removeClass() ```
 
-Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+Remove a single class, multiple classes, or all classes from each matched element.
 
 #### ``` .children() ```
 
-Get the children of each element in the set of matched elements. Optionally filter with selector.
+Get the children of each matched element, with optional filter.
 
 #### ``` .parent() ```
 
-Get the parent of each element in the current set of matched elements. Optionally filtered with selector.
+Get the parent of each matched element, with optional filter.
 
 #### ``` .find() ```
 
-Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+Get the descendant elements of the selected element, with optional filter.
 
 #### ``` .remove() ```
 
-Remove the set of matched elements from the DOM.
+Remove all matched elements from the DOM.
+
+## Event Handlers
+
+#### ``` .on() ```
+Attach an event handler function for a single or multiple events to the selected elements.
+
+#### ``` .off() ```
+Remove an event handler function from the selected elements.
+
+## Document Ready
+#### ``` $ds(callback) ``` or ``` .ready() ```
+Pass a callback function that will execute when the DOM is fully loaded.
+
+## AJAX
+
+#### ``` $ds.extend() ```
+Merge the contents of two or more objects into the first object.
+
+#### ``` $ds.ajax() ```
+Perform an asynchronous HTTP request passing settings through an options object.
