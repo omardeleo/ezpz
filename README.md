@@ -1,5 +1,5 @@
 # __DOMSelecta!__
-DOMSelecta! is a cross-browser library for traversing and manipulating the DOM, written in JavaScript.
+DOMSelecta! is a cross-platform library written in JavaScript for traversing and manipulating the DOM, event handling, and making asynchronous HTTP requests (AJAX).
 
 ## Documentation
 
