@@ -1,15 +1,15 @@
-# __DOMSelecta!__
-DOMSelecta! is a cross-platform library written in JavaScript for traversing and manipulating the DOM, event handling, and making asynchronous HTTP requests (AJAX).
+# __EZPZ!__
+EZPZ! is a cross-platform library written in JavaScript for traversing and manipulating the DOM, event handling, and making asynchronous HTTP requests (AJAX).
 
 ## Documentation
 
-#### How to install DOMSelecta!
-Installing DOMSelecta! is as simple as including a reference to the DOMSelecta script inside a ``` <script> ``` tag, within the ``` <head> ``` section of your HTML file:
+#### How to install EZPZ!
+Installing EZPZ! is as simple as including a reference to the EZPZ script inside a ``` <script> ``` tag, within the ``` <head> ``` section of your HTML file:
 
 ``` HTML
 <head>
   <meta charset="utf-8">
-  <title>DOMSelecta!</title>
+  <title>EZPZ!</title>
   <script type="text/javascript" src="./lib/dom_selecta.js">
   </script>
 </head>
