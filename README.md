@@ -18,7 +18,7 @@ Installing EZPZ! is as simple as including a reference to the EZPZ script inside
 
 ## API
 
-#### Element Selector ```$ds(“element”)```
+#### Element Selector ```$ez(“element”)```
 
 Select all elements with the given tag name.
 
@@ -71,13 +71,13 @@ Attach an event handler function for a single or multiple events to the selected
 Remove an event handler function from the selected elements.
 
 ## Document Ready
-#### ``` $ds(callback) ``` or ``` .ready() ```
+#### ``` $ez(callback) ``` or ``` .ready() ```
 Pass a callback function that will execute when the DOM is fully loaded.
 
 ## AJAX
 
-#### ``` $ds.extend() ```
+#### ``` $ez.extend() ```
 Merge the contents of two or more objects into the first object.
 
-#### ``` $ds.ajax() ```
+#### ``` $ez.ajax() ```
 Perform an asynchronous HTTP request passing settings through an options object.
