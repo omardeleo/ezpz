@@ -76,7 +76,6 @@ class DOMNodeCollection {
   parent() {
     let parent = [];
     this.nodes.forEach(el => {
-      // console.log(el.parentNode);
       if (!parent.includes(el.parentNode)){
         parent.push(el.parentNode);
       }
@@ -131,7 +130,6 @@ class DOMNodeCollection {
 
   css(property, value) {
     this.each(node => node.style[property] = value);
-    console.log(this.nodes);
   }
 
 }
