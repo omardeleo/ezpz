@@ -97,7 +97,7 @@ const DomNodeCollection = require("./dom_node_collection");
 const _docReadyCallbacks = [];
 let _docReady = false;
 
-window.$l = (arg) => {
+window.$ez = (arg) => {
   switch (typeof arg) {
     case "function":
       return registerDocReadyCallback(arg);
@@ -110,7 +110,7 @@ window.$l = (arg) => {
   }
 };
 
-$l.extend = (base, ...otherObjs) => {
+$ez.extend = (base, ...otherObjs) => {
   otherObjs.forEach((obj) => {
     for (const prop in obj) {
       base[prop] = obj[prop];
@@ -119,7 +119,7 @@ $l.extend = (base, ...otherObjs) => {
   return base;
 };
 
-$l.ajax = (options) => {
+$ez.ajax = (options) => {
   const request = new XMLHttpRequest();
   const defaults = {
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -129,7 +129,7 @@ $l.ajax = (options) => {
     error: () => {},
     data: {},
   };
-  options = $l.extend(defaults, options);
+  options = $ez.extend(defaults, options);
   options.method = options.method.toUpperCase();
 
   if (options.method === "GET") {
