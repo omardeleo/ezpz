@@ -12,7 +12,7 @@ class DOMNodeCollection {
       this.each(node => {
         node.innerHTML = html;
       });
-      return this.nodes;
+      return this;
     } else if (this.nodes.length > 0) {
       return this.nodes[0].innerHTML;
     }
