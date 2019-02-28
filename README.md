@@ -289,7 +289,7 @@ Merge the contents of two or more objects into the first object.
 var obj1 = {a: 1}
 var obj2 = {b: 2}
 ```
-
+**Example**
 ```JS
 $ez.extend({}, obj1, obj2)
 ```
@@ -297,7 +297,6 @@ returns the following:
 ```JS
 {a: 1, b:2}
 ```
-**Example**
 
 ### ``` $ez.ajax() ```
 Perform an asynchronous HTTP request passing settings through an options object.
