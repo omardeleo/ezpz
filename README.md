@@ -24,8 +24,6 @@ Select all elements with the given tag name.
 
 ### ``` .html() ```
 
-
-
 Get the HTML contents of the first element in the set of matched elements (without argument). Set the HTML contents of every matched element (with argument).
 
 ``` HTML
@@ -37,17 +35,17 @@ $ez("p").html()
 ```
 
 returns the following:
- ``` JS
- "This is a paragraph"
- ```
+``` JS
+"This is a paragraph"
+```
 **Example 2: With Argument**
- ``` JS
- $ez("p").html("Hey this is different")
- ```
- renders the following:
- ``` HTML
- <p>Hey this is different</p>
- ```
+``` JS
+$ez("p").html("Hey this is different")
+```
+renders the following:
+``` HTML
+<p>Hey this is different</p>
+```
 
 ### ``` .empty() ```
 
@@ -84,10 +82,10 @@ Insert content to the end of each element in the set of matched elements.
 ``` JS
 $ez("p").append(" with some text appended to it.")
 ```
- renders the following:
- ``` HTML
- <p>This is a paragraph with some text appended to it.</p>
- ```
+renders the following:
+``` HTML
+<p>This is a paragraph with some text appended to it.</p>
+```
 
 ### ``` .attr() ```
 
@@ -164,7 +162,7 @@ Get the children of each matched element, with optional filter.
 
 Example:
 ```JS
-  $ez("ul").children().html("List item");
+$ez("ul").children().html("List item");
 ```
 
 renders the following:
@@ -174,7 +172,6 @@ renders the following:
   <li>List item</li>
 </ul>
 ```
-
 
 ### ``` .parent() ```
 
@@ -188,7 +185,7 @@ Get the parent of each matched element, with optional filter.
 
 Example:
 ```JS
-  $ez("li").parent().addClass("list");
+$ez("li").parent().addClass("list");
 ```
 
 renders the following:
