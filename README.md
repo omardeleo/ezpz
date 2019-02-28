@@ -1,15 +1,15 @@
-# __EZPZ!__
-EZPZ! is a cross-platform library written in JavaScript for traversing and manipulating the DOM, event handling, and making asynchronous HTTP requests (AJAX).
+# __EZPZ__
+EZPZ is a cross-platform library written in JavaScript for traversing and manipulating the DOM, event handling, and making asynchronous HTTP requests (AJAX).
 
 ## Documentation
 
-#### How to install EZPZ!
-Installing EZPZ! is as simple as including a reference to the EZPZ script inside a ``` <script> ``` tag, within the ``` <head> ``` section of your HTML file:
+#### How to install EZPZ
+Installing EZPZ is as simple as including a reference to the EZPZ script inside a ``` <script> ``` tag, within the ``` <head> ``` section of your HTML file:
 
 ``` HTML
 <head>
   <meta charset="utf-8">
-  <title>EZPZ!</title>
+  <title>EZPZ</title>
   <script src="https://storage.cloud.google.com/ezpz/ezpz.js"></script>
   </script>
 </head>

@@ -63,7 +63,7 @@ class DOMNodeCollection {
     this.each(node => node.classList.toggle(className))
   }
 
-  // EZPZ! Traversal
+  // EZPZ Traversal
 
   children() {
     let children = [];
@@ -100,7 +100,7 @@ class DOMNodeCollection {
     return this;
   }
 
-  // EZPZ! EVENT HANDLERS
+  // EZPZ EVENT HANDLERS
 
   on() {
     this.nodes.forEach(node => {
