@@ -253,8 +253,31 @@ renders the following:
 #### ``` .on() ```
 Attach an event handler function for a single or multiple events to the selected elements.
 
+``` HTML
+<p>This is a paragraph</p>
+```
+
+**Example**
+```JS
+$ez("p").on('click', () => $ez("p").html("Text has changed"))
+```
+renders the following upon clicking:
+``` HTML
+<p>Text has changed</p>
+```
 #### ``` .off() ```
 Remove an event handler function from the selected elements.
+``` HTML
+<p>This is a paragraph</p>
+```
+**Example**
+
+```JS
+$ez("p").off('click', () => $ez("p").html("Text has changed"))
+```
+
+renders no changes upon clicking.
+
 
 ## Document Ready
 #### ``` $ez(callback) ``` or ``` .ready() ```
@@ -265,5 +288,29 @@ Pass a callback function that will execute when the DOM is fully loaded.
 #### ``` $ez.extend() ```
 Merge the contents of two or more objects into the first object.
 
+```JS
+var obj1 = {a: 1}
+var obj2 = {b: 2}
+```
+
+```JS
+$ez.extend({}, obj1, obj2)
+```
+returns the following:
+```JS
+{a: 1, b:2}
+```
+**Example**
+
 #### ``` $ez.ajax() ```
 Perform an asynchronous HTTP request passing settings through an options object.
+
+**Example**
+```JS
+$ez.ajax({url: 'https://www.swapi.co/api/people/1', success: (data) => console.log(data)})
+```
+
+returns the following:
+```
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://www.swapi.co/api/planets/1/","films":["https://www.swapi.co/api/films/2/","https://www.swapi.co/api/films/6/","https://www.swapi.co/api/films/3/","https://www.swapi.co/api/films/1/","https://www.swapi.co/api/films/7/"],"species":["https://www.swapi.co/api/species/1/"],"vehicles":["https://www.swapi.co/api/vehicles/14/","https://www.swapi.co/api/vehicles/30/"],"starships":["https://www.swapi.co/api/starships/12/","https://www.swapi.co/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://www.swapi.co/api/people/1/"}
+```
