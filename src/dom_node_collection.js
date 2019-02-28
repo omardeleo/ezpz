@@ -63,6 +63,8 @@ class DOMNodeCollection {
     this.each(node => node.classList.toggle(className))
   }
 
+
+
   // EZPZ Traversal
 
   children() {
@@ -130,6 +132,10 @@ class DOMNodeCollection {
 
   css(property, value) {
     this.each(node => node.style[property] = value);
+  }
+
+  show() {
+    this.css("display", "block");
   }
 
 }
