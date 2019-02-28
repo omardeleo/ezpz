@@ -63,8 +63,6 @@ class DOMNodeCollection {
     this.each(node => node.classList.toggle(className))
   }
 
-
-
   // EZPZ Traversal
 
   children() {
