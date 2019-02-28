@@ -104,21 +104,28 @@ class DOMNodeCollection {
 
   // EZPZ EVENT HANDLERS
 
-  on() {
-    this.nodes.forEach(node => {
-      node.addEventListener(arguments[0], arguments[1]);
-      node.callback = arguments[1];
-    });
-    return this;
-  }
+  on(eventName, callback) {
+     this.each((node) => {
+       node.addEventListener(eventName, callback);
+       const eventKey = `ezEvents-${eventName}`;
+       if (typeof node[eventKey] === "undefined") {
+         node[eventKey] = [];
+       }
+       node[eventKey].push(callback);
+     });
+   }
 
-  off() {
-    this.nodes.forEach(node => {
-      node.removeEventListener(arguments[0], node.callback);
-      node.callback = null;
-    });
-    return this;
-  }
+   off(eventName) {
+     this.each((node) => {
+       const eventKey = `ezEvents-${eventName}`;
+       if (node[eventKey]) {
+         node[eventKey].forEach((callback) => {
+           node.removeEventListener(eventName, callback);
+         });
+       }
+       node[eventKey] = [];
+     });
+   }
 
   ready(callback) {
     if (document.readyState === "complete") {
