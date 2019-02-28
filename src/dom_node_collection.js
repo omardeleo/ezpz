@@ -133,11 +133,6 @@ class DOMNodeCollection {
   css(property, value) {
     this.each(node => node.style[property] = value);
   }
-
-  show() {
-    this.css("display", "block");
-  }
-
 }
 
 module.exports = DOMNodeCollection;
