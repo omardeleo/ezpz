@@ -18,11 +18,11 @@ Installing EZPZ is as simple as including a reference to the EZPZ script inside 
 
 ## API
 
-#### Element Selector ```$ez(“element”)```
+### ```$ez(“element”)```Element Selector
 
 Select all elements with the given tag name.
 
-#### ``` .html() ```
+### ``` .html() ```
 
 
 
@@ -49,7 +49,7 @@ returns the following:
  <p>Hey this is different</p>
  ```
 
-#### ``` .empty() ```
+### ``` .empty() ```
 
 Remove all child nodes of the set of matched elements from the DOM.
 ```HTML
@@ -73,7 +73,7 @@ renders the following:
 <p class="three"></p>
 ```
 
-#### ``` .append() ```
+### ``` .append() ```
 
 Insert content to the end of each element in the set of matched elements.
 
@@ -89,7 +89,7 @@ $ez("p").append(" with some text appended to it.")
  <p>This is a paragraph with some text appended to it.</p>
  ```
 
-#### ``` .attr() ```
+### ``` .attr() ```
 
 Get the value of an attribute for the first element in the set of matched elements (with one argument). Set one or more attributes for every matched element (with two arguments).
 
@@ -115,7 +115,7 @@ renders the following:
 <p class="salutation">Hello you!</p>
 ```
 
-#### ``` .addClass() ```
+### ``` .addClass() ```
 
 Add the specified class or classes to each matched element.
 
@@ -133,7 +133,7 @@ renders the following:
 <p class="text">This is a paragraph</p>
 ```
 
-#### ``` .removeClass() ```
+### ``` .removeClass() ```
 
 Remove a single class, multiple classes, or all classes from each matched element.
 
@@ -151,7 +151,7 @@ renders the following:
 <p>This is a paragraph</p>
 ```
 
-#### ``` .children() ```
+### ``` .children() ```
 
 Get the children of each matched element, with optional filter.
 
@@ -176,7 +176,7 @@ renders the following:
 ```
 
 
-#### ``` .parent() ```
+### ``` .parent() ```
 
 Get the parent of each matched element, with optional filter.
 
@@ -198,7 +198,7 @@ renders the following:
 </ul>
 ```
 
-#### ``` .find() ```
+### ``` .find() ```
 
 Get the descendant elements of the selected element, with optional filter.
 ```HTML
@@ -223,7 +223,7 @@ renders the following:
   <a href="#">CLICK HERE</a>
 </div>
 ```
-#### ``` .remove() ```
+### ``` .remove() ```
 
 Remove all matched elements from the DOM
 
@@ -250,7 +250,7 @@ renders the following:
 
 ## Event Handlers
 
-#### ``` .on() ```
+### ``` .on() ```
 Attach an event handler function for a single or multiple events to the selected elements.
 
 ``` HTML
@@ -265,7 +265,7 @@ renders the following upon clicking:
 ``` HTML
 <p>Text has changed</p>
 ```
-#### ``` .off() ```
+### ``` .off() ```
 Remove an event handler function from the selected elements.
 ``` HTML
 <p>This is a paragraph</p>
@@ -280,12 +280,12 @@ renders no changes upon clicking.
 
 
 ## Document Ready
-#### ``` $ez(callback) ``` or ``` .ready() ```
+### ``` $ez(callback) ``` or ``` .ready() ```
 Pass a callback function that will execute when the DOM is fully loaded.
 
 ## AJAX
 
-#### ``` $ez.extend() ```
+### ``` $ez.extend() ```
 Merge the contents of two or more objects into the first object.
 
 ```JS
@@ -302,7 +302,7 @@ returns the following:
 ```
 **Example**
 
-#### ``` $ez.ajax() ```
+### ``` $ez.ajax() ```
 Perform an asynchronous HTTP request passing settings through an options object.
 
 **Example**
